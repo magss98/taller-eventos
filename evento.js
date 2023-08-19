@@ -1,6 +1,7 @@
 // Función que evento de clic en el div
-function ClickEnDiv() {
+function ClickEnDiv(event) {
     alert("Hola! Soy el div");
+    event.stopPropagation(); // Detener la propagación del evento
 }
 
 // let para obtener una referencia al div
